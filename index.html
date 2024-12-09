@@ -42,11 +42,37 @@
             border-radius: 5px; /* Optionnel : arrondit les coins du cadre */
         }
 
+	label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, textarea {
+            width: 100%; /* Prend toute la largeur */
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: darkblue;
+        }
+
 	img {
             max-width: 100%; /* S'assure que l'image ne déborde pas de l'écran */
             height: auto; /* Maintient les proportions de l'image */
             margin-top: 20px; /* Ajoute un espace au-dessus de l'image */
         }
+
+
     </style>
 </head>
 <body>
@@ -54,6 +80,7 @@
     <h1>Caractéristiques</h1>
     <h2>Nom de la porte</h2>
     <p>-----</p>
+    <input type="nom de la porte" id="porte" name="porte" placeholder="Entrez nom de la porte" required>
     <h2>Norme européenne</h2>
     <p>-----</p>
     <h2>Largeur de passage (LPA)</h2>
